@@ -1,0 +1,16 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+
+  - repo: https://github.com/returntocorp/semgrep
+    rev: v1.65.0
+    hooks:
+      - id: semgrep
+        name: semgrep
+        entry: semgrep scan
+        args: ["--config", "p/python"]
+        pass_filenames: false
