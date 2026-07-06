@@ -1,7 +1,15 @@
-# launchpad
+# 🚀 Launchpad
 
-Simple ReAct agent
-Agent generated with `agents-cli` version `1.0.0`
+**Launchpad** is an intelligent, role-aware onboarding assistant powered by the [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/) and Gemini. It replaces the traditional "here's a 50-page wiki, good luck" onboarding experience with an interactive, step-by-step coaching agent that guides new hires through their first weeks — one task at a time.
+
+## Key Features
+
+- 🎯 **Step-by-step wizard** — instead of dumping the entire onboarding manual, Launchpad identifies the single next task, explains how to complete it, and waits for the employee to confirm before moving on.
+- 👤 **Role-based personalisation** — onboarding paths are tailored per role (Software Engineer, HR Specialist, Product Manager, Data Scientist, Sales Representative). A new engineer gets AWS IAM setup and local dev instructions; an HR hire gets Workday and benefits guidance.
+- 🔒 **Secure by design** — built on ADK with strict system instructions that prevent prompt injection and keep the agent focused exclusively on onboarding tasks.
+- 📚 **Fully customisable knowledge base** — swap the markdown files in `knowledge_base/` for your own internal wikis (Notion, Confluence, etc.) to instantly adapt Launchpad to any company.
+- 🛠️ **Demo-ready Developer Panel** — a built-in sidebar panel lets you change the employee's role and check off tasks in real time to showcase the agent's adaptive behaviour.
+
 
 ## Project Structure
 
